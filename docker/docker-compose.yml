@@ -1,0 +1,15 @@
+services:
+  mysql:
+    container_name: mysql_container
+    image: 'mysql:latest'
+    environment:
+      MYSQL_PASSWORD: secretkey
+      MYSQL_DATABASE: chamadados_db
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: myuser
+    ports:
+      - "3308:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+volumes:
+  mysql_data:
