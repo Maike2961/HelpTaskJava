@@ -42,3 +42,10 @@ Este projeto é uma API REST de gerenciamento de chamados desenvolvida com Sprin
    ```bash
    git clone https://github.com/seu-usuario/seu-repositorio.git
    cd seu-repositorio
+   
+2. **Crie o topic do sns no localstack**
+    ```bash
+   Baixe o localstack
+   no cmd rode os comandos: 
+   - localstack start
+   - awslocal sns create-topic --name chamados
